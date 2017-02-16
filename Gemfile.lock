@@ -52,6 +52,11 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.4)
     debug_inspector (0.0.2)
+    delayed_job (4.1.2)
+      activesupport (>= 3.0, < 5.1)
+    delayed_job_active_record (4.1.1)
+      activerecord (>= 3.0, < 5.1)
+      delayed_job (>= 3.0, < 5)
     domain_name (0.5.20161129)
       unf (>= 0.0.5, < 1.0.0)
     erubis (2.7.0)
@@ -122,6 +127,8 @@ GEM
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     os (0.9.6)
+    progress_job (0.0.4)
+      delayed_job
     public_suffix (2.0.5)
     puma (3.7.0)
     rack (2.0.1)
@@ -211,11 +218,13 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
+  delayed_job_active_record
   google-api-client (~> 0.9)
   http
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  progress_job
   puma (~> 3.0)
   rails (~> 5.0.1)
   sass-rails (~> 5.0)

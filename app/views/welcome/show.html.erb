@@ -1,4 +1,8 @@
 <h1>Test Results</h1>
 <p><%= @url.inspect %></p>
-<p><%= @response.inspect %></p>
-<% puts @response.body %>
+<img src="data:image/png;base64,<%= @result['screenshot']['data'] %>">
+<p style="display: block; width: 50%;"><%= @response.body %></p>
+<p>Test Status: <%= @result['testStatus']['status'] %></p>
+<p><%= @result %></p>
+<p>Did you pass the test? <%= @result['mobileFriendliness'] %></p>
+

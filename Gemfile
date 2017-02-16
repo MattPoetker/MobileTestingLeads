@@ -37,6 +37,9 @@ gem 'google-api-client', '~> 0.9'
 
 gem "http"
 
+gem 'delayed_job_active_record'
+gem 'progress_job'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
