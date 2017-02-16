@@ -83,7 +83,7 @@ ul {
 
 li {
   padding-left: 50px;
-  background-image: url('../images/green-checkmark.svg');
+  background-image: image-url("green-checkmark.svg");
   background-position: 0px 50%;
   background-size: 30px;
   background-repeat: no-repeat;
@@ -285,8 +285,8 @@ li {
 .section.hero {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: -webkit-linear-gradient(270deg, hsla(0, 0%, 100%, .34), hsla(0, 0%, 100%, .34)), url('../images/websitecrusher-bg.jpg');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .34), hsla(0, 0%, 100%, .34)), url('../images/websitecrusher-bg.jpg');
+  background-image: -webkit-linear-gradient(270deg, hsla(0, 0%, 100%, .34), hsla(0, 0%, 100%, .34)), image-url("websitecrusher-bg.jpg");
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, .34), hsla(0, 0%, 100%, .34)), image-url("websitecrusher-bg.jpg");
   background-position: 0px 0px, 50% 25%;
   background-size: auto, cover;
   opacity: 1;
